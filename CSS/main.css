@@ -40,8 +40,8 @@ font-size: large;
 }
 
 .mgtb1v{
-  margin-top: 1v;
-  margin-bottom: 1v;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .link a:link, a:visited {
