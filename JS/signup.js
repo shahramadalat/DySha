@@ -31,7 +31,7 @@ function p()
 
     
 }
-function require()
+function require(event)
 {
     let pass=document.getElementById('txt_password').value;;
     let verify=document.getElementById('txt_verify_password').value;
@@ -41,6 +41,7 @@ function require()
     if (user == null || user== "") {
         document.getElementById('lbl_user_error').innerHTML=('Username required!');
         document.getElementById('lbl_user_error').style.display="block";
+        event.preventDefault();
         return;
     }
     else
@@ -51,6 +52,7 @@ function require()
     if (pass==null || pass == "" || verify == "" || verify==null) {
         document.getElementById('lbl_password_error').style.display="block";
         document.getElementById('lbl_password_error').innerHTML=('Password required!');
+        event.preventDefault();
         return;
     }
     else
@@ -67,6 +69,7 @@ function require()
         "- Dots (.)"+"<br>"+
         "- Underscores (_)";
         document.getElementById('lbl_user_error').style.display="block";
+        event.preventDefault();
         return;
     }
     else
@@ -78,6 +81,7 @@ function require()
     {
         document.getElementById('lbl_password_error').innerHTML=('Passwords must match');
         document.getElementById('lbl_password_error').style.display="block";
+        event.preventDefault();
         return;
     }
     else
@@ -88,6 +92,7 @@ function require()
     if (user.length<5) {
         document.getElementById('lbl_user_error').innerHTML=('Username is to short');
         document.getElementById('lbl_user_error').style.display="block";
+        event.preventDefault();
         return;
     }
     else{
@@ -98,6 +103,7 @@ function require()
     {
         document.getElementById('lbl_password_error').innerHTML=('Password is to short');
         document.getElementById('lbl_password_error').style.display="block";
+        event.preventDefault();
         return;
     }
     else{
@@ -105,16 +111,18 @@ function require()
         document.getElementById('lbl_password_error').style.display="none";
     }
 
-    var userCookie = getCookie(user);
+    var userCookie = getCookie(user+"username");
+    alert(userCookie);
     if (user==userCookie) {
         alert("This username has already taken");
+        event.preventDefault();
         return;
     }
     else{
-        setCookie(user,user,1);
-        setCookie(user,pass,1);
-        
+        setCookie(user+"username",user,1);
+        setCookie(user+"password",pass,1);
     }
+
 
 }
 

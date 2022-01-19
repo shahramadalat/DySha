@@ -7,14 +7,14 @@
     <title>Document</title>
     <link rel="stylesheet" href="CSS/main.css" />
     <link rel="stylesheet" href="CSS/login.css" />
-    <!-- <script defer type="module" src="/JS/login.js"></script> -->
+    <script defer type="text/javascript" src="/JS/login.js"></script>
 
 </head>
 <body>
 <div class="flex-container">
     <div style="flex: 30%;"></div>
     <div class="box">
-        <form class="flex-container-column" id="frm_login" method="post" action="/" >
+        <form class="flex-container-column" id="frm_login" method="get" action="/">
             <div >
                 <img src="Resources/logo.png" alt="" width="100%" height="auto">
             </div>
@@ -24,7 +24,8 @@
             <div class="flex-container-column">
                 <input type="text" name="txt_username" id="txt_username" placeholder="Username.." required autofocus/>
                 <input type="password" name="txt_password" id="txt_password" placeholder="password.."/>
-                <button type="button" id="btn_login" onclick="">Login</button>
+                <p id="errorMessage" style="display: none; color: red;">none</p>
+                <button type="submit" id="btn_login" onclick="OnLoginClicked(event)">Login</button>
                 <a href="signup.html">Create new account</a>
             </div>
         </form>

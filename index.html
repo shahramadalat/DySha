@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="CSS/main.css" />
+    <script defer type="text/javascript" src="/JS/index.js"></script>
 </head>
-<body>
+<body onload="OnLoadIndex()">
     <header >
       <nav class="flex-container">
         <div ><a href="#"><img src="Resources/logo.png"/></a></div>
@@ -18,7 +19,9 @@
               <div class="mg1v hover_border"><a href="contact.html" style="text-decoration: none; color: black;">Contact</a></div>
               <div class="mg1v hover_border"><a href="watch.html" style="text-decoration: none; color: black;">Watch <span style="color: red;">us</span></a></div>
           </div>
-          <div class="btnhover"><button class="primary noborder" style="padding: 10px;">Logout</button></div>
+          <div id="lbl_user" style="display: none;">none</div>
+          <div class="btnhover"><a onclick="OnLoginClicked()" id="link_login">
+          <button  id="btn_login" class="primary noborder" style="padding: 10px;">Login</button></a></div>
       </nav>
      </header>
 
