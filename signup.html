@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/main.css" />
+    <link rel="stylesheet" href="CSS/login.css" />
+    <script defer type="text/javascript" src="/JS/signup.js"></script>
+</head>
+<body>
+<div class="flex-container">
+    <div style="flex: 30%;"></div>
+    <div class="box">
+        <form class="flex-container-column" id="frm_login" method="post" action="/" >
+            <div >
+                <img src="Resources/logo.png" alt="" width="100%" height="auto">
+            </div>
+            <div>
+                <h3>Sign up Page</h4>
+            </div>
+            <div class="flex-container-column">
+                <input type="text" name="txt_username" id="txt_username" placeholder="Username.." required autofocus onchange= "userValidate()"/>
+                <p style="color: red; display:none;" id="lbl_user_error"></p>
+                <input type="password" name="txt_password" id="txt_password" placeholder="password.."/>
+                <input type="password" name="txt_verify_password" id="txt_verify_password" placeholder="Verify Password.." onchange="p()"/>
+                <p style="color: red; display: none;" id="lbl_password_error"></p>
+                <button type="button" id="btn_signup" onclick="require()">Sign up</button>
+                <a href="login.html">Already have an account</a>
+            </div>
+        </form>
+    </div>
+    <div style="flex: 30%;"></div>
+</div>
+
+
+
+    
+</body>
+</html>
