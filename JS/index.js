@@ -15,7 +15,6 @@ function OnLoadIndex() {
         user.style.display="block";
         btn_login.innerHTML="Logout";
     }
-  
 }
 
 function getAllUrlParams(url) {
@@ -82,8 +81,6 @@ function getAllUrlParams(url) {
   
     return obj;
   }
-
-
 function OnLoginClicked()
 {
     var btn_login=document.getElementById('btn_login');
