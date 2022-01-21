@@ -16,7 +16,6 @@ function OnLoadIndex() {
             user.style.display="block";
             btn_login.innerHTML="Logout";
         }
-    
 }
 function HomeTransfer() {
   var home = document.getElementById("btn_home");
