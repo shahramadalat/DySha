@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="CSS/main.css" />
     <link rel="stylesheet" href="CSS/login.css" />
-    <script defer type="text/javascript" src="/JS/login.js"></script>
+    <script defer type="text/javascript" src="/JS/index.js"></script>
 
 </head>
 <body>
@@ -25,7 +25,7 @@
                 <input type="text" name="txt_username" id="txt_username" placeholder="Username.." required autofocus/>
                 <input type="password" name="txt_password" id="txt_password" placeholder="password.."/>
                 <p id="errorMessage" style="display: none; color: red;">none</p>
-                <button type="submit" id="btn_login" onclick="OnLoginClicked(event)">Login</button>
+                <button type="submit" id="btn_login" onclick="OnLoginClicked(event); ">Login</button>
                 <a href="signup.html">Create new account</a>
             </div>
         </form>

@@ -19,6 +19,8 @@
 }
 .mg1v{margin-left: 1vw;margin-right: 1vw;}
 .footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   position:static;
   left: 0;
   bottom: 0;
@@ -37,7 +39,11 @@ font-size: large;
   .flex-container{
     flex-direction: column;
   }
+  .footer{
+    grid-template-columns: 1fr 1fr;
+  }
 }
+
 
 .mgtb1v{
   margin-top: 5px;
@@ -130,6 +136,7 @@ grid-row-gap: 1vw;
   .grid12{
     grid-template-columns: 1fr;
   }
+  
 }
 
 .card {
@@ -151,3 +158,9 @@ text-decoration: none;
   border: solid green 2px;
   margin:5px ;
 }
+
+.faq-grid{
+  display: grid;
+}
+
+

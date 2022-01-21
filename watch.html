@@ -18,9 +18,11 @@
               <div class="mg1v hover_border"><a href="product.html" style="text-decoration: none; color: black;">Products</a></div>
               <div class="mg1v hover_border"><a href="about.html" style="text-decoration: none; color: black;">About us</a></div>
               <div class="mg1v hover_border"><a href="contact.html" style="text-decoration: none; color: black;">Contact</a></div>
-              <div class="act mg1v hover_border"><a href="watch.html" style="text-decoration: none; color: black;">Watch <span style="color: red;">us</span></a></div>
+              <div class="act mg1v"><a href="watch.html" style="text-decoration: none; color: black;">Watch <span style="color: red;">us</span></a></div>
           </div>
-          <div class="btnhover"><button class="primary noborder" style="padding: 10px;">Logout</button></div>
+          <div id="lbl_user" style="display: none;">none</div>
+          <div class="btnhover"><a onclick="OnLoginClickedInIndex()" id="link_login">
+          <button  id="btn_login" class="primary noborder" style="padding: 10px;">Login</button></a></div>
       </nav>
      </header>
 
@@ -37,37 +39,44 @@
         </div>
      </div>
 
-
-
-
-
-
-
-
-
-
-
-     
-
 <!-- footer -->
-    <footer class="flex-container footer" >
+<footer class=" footer" >
      
 
-        <div class="flex-container-column mg1v">
-          <div> &copy;	All right reserved to Dysha Store</div>     
-        </div>
-        <div class="flex-container-column">
-          <div  class="b">Contact</div>
-            <hr width="100%">
-          <div >Email: <div class="link link_active"><a href="#"  >shahramadalat@gmail.com</a></div></div>
-          <div>phone: 0750 500 5050</div>
-          <div>address: suli</div>
-        </div>
-        <div>
-          <div  class="b">Explore</div>
-            <hr width="100%">
-            <div class="mg1v link link_active"><a href="#">Home</a></div>
-            <div class="mg1v link link_active"><a href="#">About</a></div>
-            <div class="mg1v link link_active"><a href="#">Contact</a></div>
-        </div>
-    </footer>
+  <div class="">
+    <div class="b">Products</div>
+    <hr width="100%">
+    <div class="link link_active"><a href="./product.html" >PC</a></div>
+    <div class="link link_active"><a href="./product.html" >Laptop</a></div>
+    <div class="link link_active"><a href="./product.html" >Phone</a></div>
+    <div class="link link_active"><a href="./product.html" >Tablet</a></div>
+    <div class="link link_active"><a href="./product.html" >accessory</a></div>
+    <div class="link link_active"><a href="./product.html" >Hardware</a></div>
+    
+  </div>
+  <div class="">
+    <div  class="b">Contact</div>
+    <hr width="100%">
+    <div >Email: <div class="link link_active"><a href="#"  >shahramadalat@gmail.com</a></div></div>
+    <div>phone: 0750 500 5050</div>
+    <div>address: suli</div>
+  </div>
+  <div>
+    <div  class="b">Explore</div>
+      <hr width="100%">
+      <div class="mg1v link link_active"><a href="index.html">Home</a></div>
+      <div class="mg1v link link_active"><a href="product.html">Product</a></div>
+      <div class="mg1v link link_active"><a href="about.html">About us</a></div>
+      <div class="mg1v link link_active"><a href="contact.html">Contact</a></div>
+      <div class="mg1v link link_active"><a href="watch.html">Watch us</a></div>
+  </div>
+  <div>
+  <div class="b">Get help</div>
+    <hr width="100%">
+    <div class="mg1v link link_active "><a href="faq.html">Faq</a></div>
+    <div class="mg1v link link_active"><a href="faq.html">Shipping</a></div>
+    <div class="mg1v link link_active"><a href="faq.html">Order Statues</a></div>
+</div>
+</footer>
+</body>
+</html>
